@@ -11,49 +11,50 @@
   <body>
     <!-- Countdown -->
     <div class="countdown-about w-full h-full text-white">
-      <div class="countdown flex flex-row justify-center lg:mb-20">
-        <div
-          class="daysC lg:mr-36 mr-8 flex flex-col justify-center align-center text-center"
-        >
-          <p class="daysTXT mb-3.5 lg:text-5xl text-xl">00</p>
-          <p class="lg:text-3xl text-lg">Days</p>
+        <div class="countdown flex flex-row justify-center lg:mb-20">
+          <div
+            class="daysC lg:mr-36 mr-8 flex flex-col justify-center align-center text-center"
+          >
+            <p class="daysTXT mb-3.5 lg:text-5xl text-xl">00</p>
+            <p class="lg:text-3xl text-lg">Days</p>
+          </div>
+          <div
+            class="hoursC lg:mr-36 mr-8 flex flex-col justify-center align-center text-center"
+          >
+            <p class="hoursTXT lg:text-5xl mb-3.5 text-xl">00</p>
+            <p class="lg:text-3xl text-lg">Hours</p>
+          </div>
+          <div
+            class="minutesC lg:mr-36 mr-8 flex flex-col justify-center align-center text-center"
+          >
+            <p class="minutesTXT lg:text-5xl mb-3.5 text-xl">00</p>
+            <p class="lg:text-3xl text-xl">Minutes</p>
+          </div>
+          <div
+            class="secondsC flex flex-col justify-center align-center text-center"
+          >
+            <p class="secondsTXT lg:text-5xl mb-3.5 text-xl">00</p>
+            <p class="lg:text-3xl text-lg">Seconds</p>
+          </div>
         </div>
-        <div
-          class="hoursC lg:mr-36 mr-8 flex flex-col justify-center align-center text-center"
-        >
-          <p class="hoursTXT lg:text-5xl mb-3.5 text-xl">00</p>
-          <p class="lg:text-3xl text-lg">Hours</p>
+        <div class="about text-center">
+          <p
+            class="mb-10 lg:text-xl lg:pt-0 pt-10 flex flex-row lg:w-full w-3/4 items-center justify-center mx-auto"
+          >
+            InfoSec Week is an online event dedicated to cybersecurity, it’s the
+            <br />
+            best way to dive deeper into it and to discover its world!
+          </p>
+          <p
+            class="lg:text-xl lg:pb-20 flex flex-row lg:w-full w-3/4 items-center justify-center mx-auto"
+          >
+            For 5 days, participants will get to attend conferences and workshops
+            <br />
+            in several areas of cybersecurity to learn more and enhance their
+            <br />
+            knowledge!
+          </p>
         </div>
-        <div
-          class="minutesC lg:mr-36 mr-8 flex flex-col justify-center align-center text-center"
-        >
-          <p class="minutesTXT lg:text-5xl mb-3.5 text-xl">00</p>
-          <p class="lg:text-3xl text-xl">Minutes</p>
-        </div>
-        <div
-          class="secondsC flex flex-col justify-center align-center text-center"
-        >
-          <p class="secondsTXT lg:text-5xl mb-3.5 text-xl">00</p>
-          <p class="lg:text-3xl text-lg">Seconds</p>
-        </div>
-      </div>
-      <div class="about text-center">
-        <p
-          class="mb-10 lg:text-xl lg:pt-0 pt-10 flex flex-row lg:w-full w-3/4 items-center justify-center mx-auto"
-        >
-          InfoSec Week is an online event dedicated to cybersecurity, it’s the
-          <br />
-          best way to dive deeper into it and to discover its world!
-        </p>
-        <p
-          class="lg:text-xl lg:pb-20 flex flex-row lg:w-full w-3/4 items-center justify-center mx-auto"
-        >
-          For 5 days, participants will get to attend conferences and workshops
-          <br />
-          in several areas of cybersecurity to learn more and enhance their
-          <br />
-          knowledge!
-        </p>
       </div>
     </div>
     <!-- END COUNTDOWN -->
@@ -70,212 +71,199 @@
           class="shadow-top-down w-[calc(150px+60vw)] max-h-[570px] relative"
         >
           <div
-            class="speakers-list my-9 md:my-6 py-[28px] w-[calc(150px+60vw)] max-h-[570px]"
-            id="speakers-list"
+            class="shadow-top-down w-[calc(150px+60vw)] max-h-[570px] relative"
           >
             <div
-              class="speaker ml-[20px] md:flex md:justify-between md:items-center md:my-[10vw] lg:my-[5vw] md:ml-0"
-              key="${speaker.id}"
+              class="speakers-list my-9 md:my-6 py-[28px] w-[calc(150px+60vw)] max-h-[570px]"
+              id="speakers-list"
             >
-              <div class="speaker-info font-raleway mb-5">
-                <h1
-                  class="font-righteous text-[calc(22px+1.1vw)] my-[calc(5px+.3vw)] mb-[2.4vw]"
-                >
-                  ${speaker.activity}
-                </h1>
-                <h2 class="text-[calc(18px+1.1vw)] font-bold tracking-wide">
-                  ${speaker.name}
-                </h2>
-                <p
-                  class="text-[calc(14px+.9vw)] max-w-[30ch] leading-[1.25] mb-6"
-                >
-                  ${speaker.profession}
-                </p>
-                <a href="${speaker.facebook}">
-                  <img
-                    src="./assets/logo/Vector-1.svg"
-                    alt="facebook"
-                    class="inline-block mr-5 w-9 md:w-10 hover:opacity-60"
-                  />
-                </a>
-                <a href="${speaker.twitter}">
-                  <img
-                    src="./assets/logo/Vector.svg"
-                    alt="twiter"
-                    class="inline-block mr-5 w-9 md:w-10 hover:opacity-60"
-                  />
-                </a>
-                <a href="${speaker.linkedIn}">
-                  <img
-                    src="./assets/logo/Vector-2.svg"
-                    alt="LinkedIn"
-                    class="inline-block mr-5 w-9 md:w-10 hover:opacity-60"
-                  />
-                </a>
-              </div>
               <div
-                class="speaker-img w-[calc(200px+4vw)] md:h-[290px] lg:h-[320px] md:mx-0 h-64 lg:mx-12 ml-20 mb-16 md:mb-0 self-center"
+                class="speaker ml-[20px] md:flex md:justify-between md:items-center md:my-[10vw] lg:my-[5vw] md:ml-0"
+                key="${speaker.id}"
               >
-                <img
-                  src="./assets/speakers/speaker.png"
-                  alt="speaker.png"
-                  class="w-full h-full object-cover"
-                />
+                <div class="speaker-info font-raleway mb-5">
+                  <h1
+                    class="font-righteous text-[calc(22px+1.1vw)] my-[calc(5px+.3vw)] mb-[2.4vw]"
+                  >
+                    ${speaker.activity}
+                  </h1>
+                  <h2 class="text-[calc(18px+1.1vw)] font-bold tracking-wide">
+                    ${speaker.name}
+                  </h2>
+                  <p
+                    class="text-[calc(14px+.9vw)] max-w-[30ch] leading-[1.25] mb-6"
+                  >
+                    ${speaker.profession}
+                  </p>
+                  <a href="${speaker.facebook}">
+                    <img
+                      src="./assets/logo/Vector-1.svg"
+                      alt="facebook"
+                      class="inline-block mr-5 w-9 md:w-10 hover:opacity-60"
+                    />
+                  </a>
+                  <a href="${speaker.twitter}">
+                    <img
+                      src="./assets/logo/Vector.svg"
+                      alt="twiter"
+                      class="inline-block mr-5 w-9 md:w-10 hover:opacity-60"
+                    />
+                  </a>
+                  <a href="${speaker.linkedIn}">
+                    <img
+                      src="./assets/logo/Vector-2.svg"
+                      alt="LinkedIn"
+                      class="inline-block mr-5 w-9 md:w-10 hover:opacity-60"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="speaker-img w-[calc(200px+4vw)] md:h-[290px] lg:h-[320px] md:mx-0 h-64 lg:mx-12 ml-20 mb-16 md:mb-0 self-center"
+                >
+                  <img
+                    src="./assets/speakers/speaker.png"
+                    alt="speaker.png"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
               </div>
+              check speakers.js
             </div>
-            check speakers.js
           </div>
         </div>
-      </div>
-    </section>
-    <!-- END SPEAKERS -->
-
+      </section>
+      <!-- END SPEAKERS -->
+    
     <!--agenda section-->
     <section class="agenda h-full w-full bg-[#00172A] pb-16">
-      <div class="flex flex-col isolate p-14 lg:p-48 md:p-36 md:text-2xl">
-        <p
-          class="font-righteous px-20 md:py-[1.5%] agenda-title text-white font-normal text-[calc(28px+1.3vw)] relative mb-10 mx-auto"
-        >
-          Agenda
-        </p>
-
-        <div
-          class="agenda-buttons flex flex-start flex-wrap lg:justify-between my-5 mb-3"
-        >
-          <button
-            class="font-bold border-2 border-gold py-1 px-7 text-[#A3770D] skew-x-[-20deg] hover:bg-[#A3770D] hover:text-[#00172A]"
-          >
-            <p class="skew-x-[20deg]">Day 1</p>
-          </button>
-          <button
-            class="font-bold border-2 border-gold py-1 px-7 text-[#A3770D] skew-x-[-20deg] hover:bg-[#A3770D] hover:text-[#00172A]"
-          >
-            <p class="skew-x-[20deg]">Day 2</p>
-          </button>
-          <button
-            class="font-bold border-2 border-gold py-1 px-7 text-[#A3770D] skew-x-[-20deg] hover:bg-[#A3770D] hover:text-[#00172A]"
-          >
-            <p class="skew-x-[20deg]">Day 3</p>
-          </button>
-          <button
-            class="font-bold border-2 border-gold py-1 px-7 text-[#A3770D] skew-x-[-20deg] hover:bg-[#A3770D] hover:text-[#00172A]"
-          >
-            <p class="skew-x-[20deg]">Day 4</p>
-          </button>
-          <button
-            class="font-bold border-2 border-gold py-1 px-7 text-[#A3770D] skew-x-[-20deg] hover:bg-[#A3770D] hover:text-[#00172A]"
-          >
-            <p class="skew-x-[20deg]">Day 5</p>
-          </button>
+        <div class="flex flex-col items-center justify-center isolate p-5 md:p-10 md:text-2xl">
+            <p class="font-righteous px-20 md:py-[1.5%] agenda-title text-white font-normal text-[calc(28px+1.3vw)] relative mb-10 mx-auto">
+            Agenda</p>
+        
+            <div class=" agenda-btns gap-5 md:gap-x-10 md:gap-y-5 my-12 md:mb-20 font-righteous agenda-buttons flex justify-center items-center flex-wrap">
+                <Button class=" agenda-btn-pressed border-2 border-gold py-0.5 px-8 sm:px-12 text-[#A3770D] skew-x-[-35deg] hover:bg-[#A3770D] hover:text-[#00172A]"><p class="skew-x-[35deg]">Day 1</p></Button>
+                <Button class=" border-2 border-gold py-0.5 px-8 sm:px-12 text-[#A3770D] skew-x-[-35deg] hover:bg-[#A3770D] hover:text-[#00172A]"><p class="skew-x-[35deg]">Day 2</p></Button>
+                <Button class=" border-2 border-gold py-0.5 px-8 sm:px-12 text-[#A3770D] skew-x-[-35deg] hover:bg-[#A3770D] hover:text-[#00172A]"><p class="skew-x-[35deg]">Day 3</p></Button>
+                <Button class=" border-2 border-gold py-0.5 px-8 sm:px-12 text-[#A3770D] skew-x-[-35deg] hover:bg-[#A3770D] hover:text-[#00172A]"><p class="skew-x-[35deg]">Day 4</p></Button>
+                <Button class=" border-2 border-gold py-0.5 px-8 sm:px-12 text-[#A3770D] skew-x-[-35deg] hover:bg-[#A3770D] hover:text-[#00172A]"><p class="skew-x-[35deg]">Day 5</p></Button>
+                
+            </div>
+        <div class="container mx-auto">
+          
+                  <div class="text-white day0 sm:mx-20 lg:mx-28">
+                      
+                      <div class="flex flex-row flex-start px-3 pb-4 border-b-[1px] border-blue-50 mb-10 md:mb-20">
+                          <p class="flex-shrink-0 mr-[5em]">09:00 AM</p>
+                          <p >Opening Ceremony</p>
+                      </div>
+                      <div class="flex flex-row flex-start px-3 pb-4 border-b-[1px] border-blue-50 mb-10 md:mb-20  ">
+                          <p class="flex-shrink-0 mr-[5em]">10:00 AM</p>
+                          <p>Conference: Threat detection and Sigma Rules.</p>
+                      </div>
+          
+                      <div class="flex flex-row flex-start px-3 pb-4 border-b-[1px] border-blue-50 mb-10 md:mb-20  ">
+                          <p class="flex-shrink-0 mr-[5em]">01:00 PM</p>
+                          <p>Conference: QKD Protocols.</p>
+                      </div>
+          
+                      <div class="flex flex-row px-3 pb-4 border-b-[1px] border-blue-50">
+                          <p class="flex-shrink-0 mr-[5em]">07:00 PM</p>
+                          <p class="">Online Conference: Lock Picking 101. </p>
+                      </div>
+                  </div>
+          
+                  <div class="text-white day1 sm:mx-20 lg:mx-28 agenda-hidden">
+                      
+                      <div class="flex flex-row flex-start px-3 pb-4 border-b-[1px] border-blue-50 mb-10 md:mb-20">
+                          <p class="flex-shrink-0 mr-[5em]">22:22 AM</p>
+                          <p >2 Ceremony</p>
+                      </div>
+                      <div class="flex flex-row flex-start px-3 pb-4 border-b-[1px] border-blue-50 mb-10 md:mb-20  ">
+                          <p class="flex-shrink-0 mr-[5em]">10:00 AM</p>
+                          <p>Conference: Threat detection and Sigma Rules.</p>
+                      </div>
+          
+                      <div class="flex flex-row flex-start px-3 pb-4 border-b-[1px] border-blue-50 mb-10 md:mb-20  ">
+                          <p class="flex-shrink-0 mr-[5em]">01:00 PM</p>
+                          <p>Conference: QKD Protocols.</p>
+                      </div>
+          
+                      <div class="flex flex-row px-3 pb-4 border-b-[1px] border-blue-50">
+                          <p class="flex-shrink-0 mr-[5em]">07:00 PM</p>
+                          <p class="">Online Conference: Lock Picking 101. </p>
+                      </div>
+                  </div>
+          
+                  <div class="text-white day2 sm:mx-20 lg:mx-28 agenda-hidden">
+                      
+                      <div class="flex flex-row flex-start px-3 pb-4 border-b-[1px] border-blue-50 mb-10 md:mb-20">
+                          <p class="flex-shrink-0 mr-[5em]">33:33 AM</p>
+                          <p >3 Ceremony</p>
+                      </div>
+                      <div class="flex flex-row flex-start px-3 pb-4 border-b-[1px] border-blue-50 mb-10 md:mb-20  ">
+                          <p class="flex-shrink-0 mr-[5em]">10:00 AM</p>
+                          <p>Conference: Threat detection and Sigma Rules.</p>
+                      </div>
+          
+                      <div class="flex flex-row flex-start px-3 pb-4 border-b-[1px] border-blue-50 mb-10 md:mb-20  ">
+                          <p class="flex-shrink-0 mr-[5em]">01:00 PM</p>
+                          <p>Conference: QKD Protocols.</p>
+                      </div>
+          
+                      <div class="flex flex-row px-3 pb-4 border-b-[1px] border-blue-50">
+                          <p class="flex-shrink-0 mr-[5em]">07:00 PM</p>
+                          <p class="">Online Conference: Lock Picking 101. </p>
+                      </div>
+                  </div>
+          
+                  <div class="text-white day3 sm:mx-20 lg:mx-28 agenda-hidden">
+                      
+                      <div class="flex flex-row flex-start px-3 pb-4 border-b-[1px] border-blue-50 mb-10 md:mb-20">
+                          <p class="flex-shrink-0 mr-[5em]">44:44 AM</p>
+                          <p >4 Ceremony</p>
+                      </div>
+                      <div class="flex flex-row flex-start px-3 pb-4 border-b-[1px] border-blue-50 mb-10 md:mb-20  ">
+                          <p class="flex-shrink-0 mr-[5em]">10:00 AM</p>
+                          <p>Conference: Threat detection and Sigma Rules.</p>
+                      </div>
+          
+                      <div class="flex flex-row flex-start px-3 pb-4 border-b-[1px] border-blue-50 mb-10 md:mb-20  ">
+                          <p class="flex-shrink-0 mr-[5em]">01:00 PM</p>
+                          <p>Conference: QKD Protocols.</p>
+                      </div>
+          
+                      <div class="flex flex-row px-3 pb-4 border-b-[1px] border-blue-50">
+                          <p class="flex-shrink-0 mr-[5em]">07:00 PM</p>
+                          <p class="">Online Conference: Lock Picking 101. </p>
+                      </div>
+                  </div>
+          
+                  <div class="text-white day4 sm:mx-20 lg:mx-28 agenda-hidden">
+                      
+                      <div class="flex flex-row flex-start px-3 pb-4 border-b-[1px] border-blue-50 mb-10 md:mb-20">
+                          <p class="flex-shrink-0 mr-[5em]">55:55 AM</p>
+                          <p >5 Ceremony</p>
+                      </div>
+                      <div class="flex flex-row flex-start px-3 pb-4 border-b-[1px] border-blue-50 mb-10 md:mb-20  ">
+                          <p class="flex-shrink-0 mr-[5em]">10:00 AM</p>
+                          <p>Conference: Threat detection and Sigma Rules.</p>
+                      </div>
+          
+                      <div class="flex flex-row flex-start px-3 pb-4 border-b-[1px] border-blue-50 mb-10 md:mb-20  ">
+                          <p class="flex-shrink-0 mr-[5em]">01:00 PM</p>
+                          <p>Conference: QKD Protocols.</p>
+                      </div>
+          
+                      <div class="flex flex-row px-3 pb-4 border-b-[1px] border-blue-50">
+                          <p class="flex-shrink-0 mr-[5em]">07:00 PM</p>
+                          <p class="">Online Conference: Lock Picking 101. </p>
+                      </div>
+                  </div>
         </div>
-
-        <div class="text-white md:mx-5 day0">
-          <div class="flex flex-row p-5 border-b-2 border-blue-50">
-            <p class="mr-[5em]">09:00 AM</p>
-            <p>Opening Ceremony</p>
-          </div>
-          <div class="flex flex-row p-5 border-b-2 border-blue-50">
-            <p class="mr-[5em]">10:00 AM</p>
-            <p>Conference: Threat detection and Sigma Rules.</p>
-          </div>
-
-          <div class="flex flex-row p-5 border-b-2 border-blue-50">
-            <p class="mr-[5em]">01:00 PM</p>
-            <p>Conference: QKD Protocols.</p>
-          </div>
-
-          <div class="flex flex-row p-5 border-b-2 border-blue-50">
-            <p class="mr-[5em]">07:00 PM</p>
-            <p>Online Conference: Lock Picking 101.</p>
-          </div>
-        </div>
-
-        <div class="text-white md:mx-5 day1 agenda-hidden">
-          <div class="flex flex-row p-5 border-b-2 border-blue-50">
-            <p class="mr-[5em]">22:22 AM</p>
-            <p>Opening Ceremony</p>
-          </div>
-          <div class="flex flex-row p-5 border-b-2 border-blue-50">
-            <p class="mr-[5em]">10:00 AM</p>
-            <p>Conference: Threat detection and Sigma Rules.</p>
-          </div>
-
-          <div class="flex flex-row p-5 border-b-2 border-blue-50">
-            <p class="mr-[5em]">01:00 PM</p>
-            <p>Conference: QKD Protocols.</p>
-          </div>
-
-          <div class="flex flex-row p-5 border-b-2 border-blue-50">
-            <p class="mr-[5em]">07:00 PM</p>
-            <p>Online Conference: Lock Picking 101.</p>
-          </div>
-        </div>
-
-        <div class="agenda-hidden md:mx-5 text-white day2">
-          <div class="flex flex-row p-5 border-b-2 border-blue-50">
-            <p class="mr-[5em]">33:33 AM</p>
-            <p>Opening Ceremony</p>
-          </div>
-          <div class="flex flex-row p-5 border-b-2 border-blue-50">
-            <p class="mr-[5em]">10:00 AM</p>
-            <p>Conference: Threat detection and Sigma Rules.</p>
-          </div>
-
-          <div class="flex flex-row p-5 border-b-2 border-blue-50">
-            <p class="mr-[5em]">01:00 PM</p>
-            <p>Conference: QKD Protocols.</p>
-          </div>
-
-          <div class="flex flex-row p-5 border-b-2 border-blue-50">
-            <p class="mr-[5em]">07:00 PM</p>
-            <p>Online Conference: Lock Picking 101.</p>
-          </div>
-        </div>
-
-        <div class="agenda-hidden md:mx-5 text-white day3">
-          <div class="flex flex-row p-5 border-b-2 border-blue-50">
-            <p class="mr-[5em]">44:44 AM</p>
-            <p>Opening Ceremony</p>
-          </div>
-          <div class="flex flex-row p-5 border-b-2 border-blue-50">
-            <p class="mr-[5em]">10:00 AM</p>
-            <p>Conference: Threat detection and Sigma Rules.</p>
-          </div>
-
-          <div class="flex flex-row p-5 border-b-2 border-blue-50">
-            <p class="mr-[5em]">01:00 PM</p>
-            <p>Conference: QKD Protocols.</p>
-          </div>
-
-          <div class="flex flex-row p-5 border-b-2 border-blue-50">
-            <p class="mr-[5em]">07:00 PM</p>
-            <p>Online Conference: Lock Picking 101.</p>
-          </div>
-        </div>
-
-        <div class="agenda-hidden md:mx-5 text-white day4">
-          <div class="flex flex-row p-5 border-b-2 border-blue-50">
-            <p class="mr-[5em]">55:55 AM</p>
-            <p>Opening Ceremony</p>
-          </div>
-          <div class="flex flex-row p-5 border-b-2 border-blue-50">
-            <p class="mr-[5em]">10:00 AM</p>
-            <p>Conference: Threat detection and Sigma Rules.</p>
-          </div>
-
-          <div class="flex flex-row p-5 border-b-2 border-blue-50">
-            <p class="mr-[5em]">01:00 PM</p>
-            <p>Conference: QKD Protocols.</p>
-          </div>
-
-          <div class="flex flex-row p-5 border-b-2 border-blue-50">
-            <p class="mr-[5em]">07:00 PM</p>
-            <p>Online Conference: Lock Picking 101.</p>
-          </div>
         </div>
       </div>
     </section>
-    <!--end of agenda section-->
+    <!--End Of Agenda Section-->
 
     <!-- Contact Form -->
     <div
@@ -316,7 +304,7 @@
           class="message-form h-48 pl-5 pt-2 w-full mb-6"
           placeholder="Message"
         ></textarea>
-        <button type="submit" class="submit-form md:w-36 w-20 h-8 rounded-2xl">
+        <button type="submit" class="submit-form px-16 py-4 rounded-full">
           Send
         </button>
       </form>

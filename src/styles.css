@@ -31,23 +31,41 @@
   position: absolute;
   transform: skew(-45deg);
   width: 100%;
-  height: 110%;
+  height: 100%;
   z-index: -1;
 }
 .agenda-title::before {
   background-color: #a3770da6;
   top: 15%;
-  right: 7%;
+  right: 6%;
 }
 .agenda-title::after {
   background-color: #ffffff33;
-  right: 0%;
-  top: -2px;
+  right: -3%;
+  top: -3.5px;
 }
 
 .agenda-btn-pressed {
   background-color: #a3770d;
   color: #00172a;
+}
+@media screen and (min-width: 600px) {
+  .agenda-btns {
+    margin-right: 7%;
+    margin-left: 7%;
+  }
+}
+@media screen and (max-width: 642px) {
+  .agenda-btns {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .agenda Button {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 
 /*end of agenda section */
@@ -63,10 +81,6 @@
 
 .about {
   font-family: "Raleway", cursive;
-}
-
-.bg-midnight {
-  background-color: var(--background-color);
 }
 
 .contact-form {
@@ -91,7 +105,7 @@
   background-color: #a3770da6;
   color: #00172a;
   font-family: "Righteous", cursive;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .footer {
